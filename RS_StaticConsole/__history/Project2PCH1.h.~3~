@@ -1,0 +1,7 @@
+#ifdef _WIN32
+#include <tchar.h>
+#endif
+#include <string>
+
+extern "C" __declspec(dllimport)  int number();
+extern "C" __declspec(dllimport)  std::string fio();

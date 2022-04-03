@@ -1,0 +1,44 @@
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+#include <iostream>
+#include "ConsolePCH1.h"
+#include "DLL.cpp"
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	int a;
+	system("chcp 1251");
+	std::system("cls");
+
+	std::cout << "Лабораторная работа №1 - динамическая библиотека DLL\n";
+	std::cout << "Чтобы получить доступ к данным студента, выполневшего данную лабораторную работу, необходимо решить следующий пример:\n";
+	std::cout << "2 + 2 * 2 =";
+	std::cin >> a;
+	if (a==6)
+	{
+		std::cout << "Группа: ";
+		number();
+
+		std::cout << "ФИО: ";
+		fio();
+
+		std::system("pause");
+	}
+	else
+	{
+		std:cout << "Неверный ответ! Попробуйте еще раз.";
+        std::system("pause");
+	}
+
+
+	return 0;
+}

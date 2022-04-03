@@ -1,0 +1,9 @@
+#ifdef _WIN32
+#include <tchar.h>
+#endif
+#pragma once
+#include <string>
+
+extern "C" int number();
+extern "C" std::string fio();
+
