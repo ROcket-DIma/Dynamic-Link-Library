@@ -1,0 +1,2 @@
+C:\Users\admin\Desktop\LR1_Ivanov\DynCons\x64\Debug\DynCons.exe
+C:\Users\admin\Desktop\LR1_Ivanov\VisualStudio\DynCons\x64\Debug\DynCons.exe
